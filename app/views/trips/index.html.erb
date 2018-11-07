@@ -1,0 +1,22 @@
+<h1>Look at all your trips!!!</h1>
+ 
+<table>
+  <tr>
+    <th>Start</th>
+    <th>End</th>
+    <th>Miles</th>
+  </tr>
+ 
+  <% @trips.each do |trip| %>
+    <tr>
+      <td><%= trip.start %></td>
+      <td><%= trip.end %></td>
+      <td><%= trip.miles %></td>
+      <td><%= link_to 'Show', trip_path(trip) %></td>
+    </tr>
+  <% end %>
+</table>
+
+<br>
+<%= link_to 'New Trip', new_trip_path %>
+  
