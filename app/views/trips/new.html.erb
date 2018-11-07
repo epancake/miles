@@ -3,6 +3,11 @@
 
 <%= form_with scope: :trip, url: trips_path, local: true do |form| %>
     <p>
+    <%= form.label :date %><br>
+    <%= form.date_field :date %>
+  </p>
+
+    <p>
       <%= form.label :start %><br>
       <%= form.text_field :start %>
     </p>

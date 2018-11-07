@@ -13,6 +13,7 @@
 ActiveRecord::Schema.define(version: 2018_11_07_204604) do
 
   create_table "trips", force: :cascade do |t|
+    t.date "date"
     t.string "start"
     t.text "end"
     t.integer "miles"

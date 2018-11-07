@@ -2,13 +2,16 @@
  
 <table>
   <tr>
+    <th>Date</th>
     <th>Start</th>
     <th>End</th>
     <th>Miles</th>
+    <th>Link</th>
   </tr>
  
   <% @trips.each do |trip| %>
-    <tr>
+    <tr class="result">
+      <td><%= trip.date %></td>
       <td><%= trip.start %></td>
       <td><%= trip.end %></td>
       <td><%= trip.miles %></td>
